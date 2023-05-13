@@ -7,7 +7,7 @@ use Yii;
 use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
 
-class TextManager extends Controller {
+class TextManagerController extends Controller {
     public function behaviors(): array {
         $behaviors = parent::behaviors();
         $behaviors['access'] = [
@@ -39,7 +39,7 @@ class TextManager extends Controller {
     public function actionCheckField(): array {
         $text = Yii::$app->request->post('text');
 
-        $corrector = Yii::$app->textManager->correct()->setText($text);
+        $corrector = Yii::$app->textManager->suggestions()->setText($text);
 
         return [
             'success' => true,

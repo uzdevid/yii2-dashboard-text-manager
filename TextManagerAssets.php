@@ -1,6 +1,6 @@
 <?php
 
-namespace uzdevid\dashboard\korrektor;
+namespace uzdevid\dashboard\text;
 
 use yii\web\AssetBundle;
 

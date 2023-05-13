@@ -1,6 +1,6 @@
 <?php
 
-namespace uzdevid\dashboard\korrektor\widgets;
+namespace uzdevid\dashboard\text\widgets;
 
 use yii\helpers\Html;
 
