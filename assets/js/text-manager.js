@@ -28,7 +28,7 @@ $(document).ready(function () {
                 modalPage.show();
             },
             error: function (data) {
-                toaster.error(data.body.message, data.body.title)
+                toaster.error(data.responseJSON.body.message, data.responseJSON.body.title)
             }
         });
     });
