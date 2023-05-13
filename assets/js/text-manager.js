@@ -26,6 +26,9 @@ $(document).ready(function () {
                 $('#modal-page-body').html(data.body.view);
 
                 modalPage.show();
+            },
+            error: function (data) {
+                toaster.error(data.body.message, data.body.title)
             }
         });
     });
